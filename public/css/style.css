@@ -1,0 +1,237 @@
+/* General */
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    background: url(../images/mainBg.jpg);
+    background-attachment: fixed;
+}
+
+/* sign up page */
+#signUpBg {
+    background: url(../images/singUpBg.jpg);
+}
+.signBox {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    margin: auto;
+    width: 30%;
+    border: 3px solid rgb(30, 0, 121);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 6px;
+}
+.inputMargin {
+    margin-top: 5px;
+}
+.submitBtn {
+    margin-top: 8px;
+    background-color: rgb(0, 115, 255);
+    border-radius: 6px;
+    width: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submitBtn:hover {
+    color: rgb(14, 120, 0);
+}
+.signUpMarg {
+    margin: 20px;
+    padding: 20px;
+}
+#signUpBoxMarg {
+    margin-top: 120px;
+}
+.signUpTitle {
+    text-align: center;
+    font-size: 62px;
+    margin: 10px;
+}
+.colourTxt {
+    color: white;
+}
+@media only screen and (max-width: 880px) {
+    .signBox {
+        width: 300px;
+    }
+  }
+
+/* comments */
+#commentMargin {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* post */
+.postBg {
+    background-color: rgb(165, 165, 165);
+    width: 700px;
+    border-radius: 10px;
+}
+.postInsideMargin {
+    margin: 10px;
+    padding: 10px;
+}
+#spanPost {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+}
+#postText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 39px;
+}
+.PostTextarea {
+    border-radius: 10px;
+    padding: 7px;
+    width: 550px;
+    height: 110px;
+}
+#replySubmitMargin {
+    margin-top: 10px;
+}
+.postSubBtn {
+    width: 120px;
+    border-radius: 6px;
+}
+#postCen {
+}
+#postMarg {
+    width: 70%; margin: 0px auto
+}
+#postWidth {
+    
+}
+
+/* Nav Bar */
+nav {
+    background: rgb(255,97,30);
+    background: linear-gradient(90deg, rgba(255,97,30,1) 0%, rgba(255,241,23,1) 38%, rgba(255,0,0,1) 100%);
+}
+#logoutStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.logoMargin {
+    margin-left: 12px;
+}
+#loginStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#loginStyle:hover {
+    color: rgb(0, 200, 255);
+}
+#caStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#caStyle:hover {
+    color: rgb(0, 200, 255);
+}
+@media only screen and (max-width: 900px) {
+    #caStyle {
+        font-size: 14px;
+    }
+    #logoutStyle {
+        font-size: 14px;
+    }
+    #loginStyle {
+        font-size: 14px;
+    }
+  }
+
+/* login */
+#loginCenter {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* New Styles - TO OVERIDE materialize */
+
+#postText {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+  }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.pad-delete {
+    padding: 0;
+    margin: 0;
+}
+
+.inline-block {
+    display: inline-block;
+  }
+
+  .reply_details {
+   font-size: 6px;
+  }
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+    width: 400px;
+  }
+  
+  /* Modal Header */
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  /* Close Button */
+  .close-button {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Response Message */
+  #response-message {
+    margin: 0;
+  }
+  

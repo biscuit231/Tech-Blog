@@ -1,0 +1,40 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="stylesheet" href="/css/jass.css"/>
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'/>
+      <link rel="stylesheet" href="/css/style.css"/>
+    <title>Circle</title>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo left logoMargin">Circle</a>
+        <ul id="nav-mobile" class="right">
+          {{#if logged_in }}
+          <li id="logout"><a href="#" id="logoutStyle">Logout</a></li>
+          {{else}}
+          <li><a href="/api/users/login" id="loginStyle">Login</a></li>
+          <li><a href="/api/users/newUser" id="caStyle">Create Account</a></li>
+          {{/if}} 
+        </ul>
+      </div>
+    </nav>
+
+    <div id="postCen">
+    {{{ body }}}
+    </div>
+
+ 
+ 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    <script src ='/js/logout.js'></script>
+    
+
+  </body>
+</html>

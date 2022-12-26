@@ -1,0 +1,60 @@
+<div class='justify-content-center pad-delete'>
+  <div class='row container justify-content-center pad-delete'>
+    <div class='col s12 m7'>
+      <div class='card justify-content-center'>
+        <span
+          class='card-title col s12 teal lighten-3'
+        >{{post.post_title}}</span>
+        <div>
+          <p class='inline-block col s6 grey'>{{post.user.user_name}}</p>
+          <p class='inline-block col s6 grey'>{{format_time post.post_date}}</p>
+        </div>
+        <div class='card-image'>
+          <a href='/images/uploads/{{post.post_image}}' target='_blank'>
+            <img src='/images/uploads/{{post.post_image}}' />
+          </a>
+
+        </div>
+        <div class='card-content'>
+          <p>{{post.post_body}}</p>
+        </div>
+        {{#if logged_in}}
+          <form class='col s12 reply'>
+            <div class='row'>
+              <div class='input-field col s12'>
+                <textarea
+                  id='reply'
+                  class='materialize-textarea PostTextarea'
+                ></textarea>
+                <label for='reply'>Reply</label>
+                <button
+                  class='btn waves-effect waves-light postSubBtn'
+                  type='submit'
+                  name='action'
+                >Submit</button>
+              </div>
+            </div>
+          </form>
+        {{else}}
+          <p>You must to logged in to post a reply</p>
+        {{/if}}
+
+        {{#each replys as |reply|}}
+          <div class='row pad-delete replys'>
+            <div class='col s6 reply_details'><p id="commentMargin"
+              >{{reply.user.user_name}}</p></div>
+            <div class='col s6 reply_details'><p>{{format_time
+                  reply.reply_date
+                }}</p></div>
+          </div>
+          <div>
+            <p class='col s12 teal lighten-5'>{{reply.reply_body}}</p>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src='/js/reply.js'></script>

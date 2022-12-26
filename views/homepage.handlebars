@@ -1,0 +1,99 @@
+<div>
+  {{#if logged_in}}
+<form action="/api/posts/create" method="post" enctype="multipart/form-data" class="valign-wrapper center-align">
+  <div class="container">
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4>new post</h4>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Post title" id="post_title" type="text" class="validate" name="post_title">
+            <label for="post_title">Post Title</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="post_body" type="text" class="validate" name="post_body">
+            <label for="post_body">Body</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file" name="post_image" id="imgInp">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+    {{!-- iamge preview --}}
+        <div>
+            <img id="preview" src="#" alt="Image preview" class="col s12 hidden"/>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+{{else}}
+<p>Please <a href="/api/users/login">login</a> to create a post.</p>
+{{/if}}
+</div>
+
+
+  {{#each posts as |post|}}
+<div class="justify-content-center pad-delete" id="postMarg">
+  <div class="row clickable-div container justify-content-center pad-delete" id="postWidth" onclick="location.href='/posts/{{post.post_id}}'">
+    <div class="col s12 m7">
+      <div class="card justify-content-center">
+         <span class="card-title col s12 teal lighten-3">{{post.post_title}}</span>
+         <p class="inline-block col s6 grey">{{post.user.user_name}}</p>
+         <p  class="inline-block col s6 grey">{{ format_time post.post_date}}</p>
+        <div class="card-image">
+          <img src="/images/uploads/{{post.post_image}}">
+        </div>
+        <div class="card-content">
+         
+          <p>{{post.post_body}}</p>
+        </div>
+        <div class="card-action">
+          <a href="/posts/{{post.post_id}}">View Post & Replys</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  {{/each}}
+
+<!-- Modal for error messages -->
+<div id="error-modal" class="modal">
+  <div class="modal-content">
+    <h4>Oops...</h4>
+    <p>Something went wrong. Please check your input and try again.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<!-- Modal for success messages -->
+<div id="success-modal" class="modal">
+  <div class="modal-content">
+    <h4>Success!</h4>
+    <p>Your post has been created successfully.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+
+<script src="./js/preview.js"></script>
+<script src="./js/post.js"></script>

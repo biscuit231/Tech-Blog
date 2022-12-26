@@ -1,0 +1,42 @@
+<h1 id="loginCenter">Login</h1>
+<div class="signBox">
+  <div class="row">
+    <form class="col s12 login-form">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="email-login" type="text" class="validate">
+          <label for="first_name">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password-login" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Login</button>
+    </form>
+  </div>
+  </div>
+
+  <!-- Modal Overlay -->
+<div class="modal-overlay">
+  <!-- Modal Content -->
+  <div class="modal-content">
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h2>Error</h2>
+      <!-- Close Button -->
+      <button class="close-button" onclick="closeModal()">X</button>
+    </div>
+    <!-- Modal Body -->
+    <div class="modal-body">
+      <!-- Response Message -->
+      <p id="response-message"></p>
+    </div>
+  </div>
+</div>
+
+
+    <script src="/js/login.js"></script>

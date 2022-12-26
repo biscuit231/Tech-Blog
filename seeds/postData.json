@@ -1,0 +1,26 @@
+[
+    { 
+    "post_id": "1",
+    "post_title": "This is a test post title", 
+    "post_body": "lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text ",
+    "post_author": "1"
+},
+{
+ 
+    "post_title": "This is another test post title",
+    "post_body": "lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text ",
+    "post_author": "1"
+},
+{
+
+    "post_title": "Here is a third test post title",
+    "post_body": "lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text ",
+    "post_author": "1"
+},
+{
+
+    "post_title": "This post has a different title",
+    "post_body": "lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text ",
+    "post_author": "1"
+}
+]

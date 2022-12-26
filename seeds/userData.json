@@ -1,0 +1,67 @@
+[
+    {  
+        "users_id": "1",
+        "user_name": "Kokkonut",
+        "first_name": "Nicolas",
+        "last_name": "Fraenkel",
+        "email": "Nicfraenkel@gmail.com",
+        "password": "Password1234"
+
+    },
+    {
+        "user_name": "apple",
+        "first_name": "Samantha",
+        "last_name": "Smith",
+        "email": "samantha.smith@gmail.com",
+        "password": "samantha123"
+  
+    },
+    {
+        "user_name": "banana",
+        "first_name": "Ben",
+        "last_name": "Johnson",
+        "email": "ben.johnson@gmail.com",
+        "password": "benjohnson456"
+
+    },
+    {
+        "user_name": "cherry",
+        "first_name": "Charlotte",
+        "last_name": "Williams",
+        "email": "charlotte.williams@gmail.com",
+        "password": "charlottewilliams789"
+ 
+    },
+    {
+        "user_name": "grape",
+        "first_name": "George",
+        "last_name": "Brown",
+        "email": "george.brown@gmail.com",
+        "password": "georgebrown246"
+
+    },
+    {
+        "user_name": "lemon",
+        "first_name": "Lisa",
+        "last_name": "Jones",
+        "email": "lisa.jones@gmail.com",
+        "password": "lisajones369"
+  
+    },
+    {
+        "user_name": "orange",
+        "first_name": "Oliver",
+        "last_name": "Taylor",
+        "email": "oliver.taylor@gmail.com",
+        "password": "olivertaylor159"
+     
+    },
+    {
+        "user_name": "pear",
+        "first_name": "Patricia",
+        "last_name": "Wilson",
+        "email": "patricia.wilson@gmail.com",
+        "password": "patriciawilson753"
+        
+    }
+]

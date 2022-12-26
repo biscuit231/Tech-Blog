@@ -1,0 +1,22 @@
+[
+    {   
+    "reply_body": "This is reply 1",
+    "reply_author": "1",
+    "posts_id": "1"
+},
+{
+    "reply_body": "This is reply 12",
+    "reply_author": "1",
+    "posts_id": "1"
+},
+{
+    "reply_body": "This is reply 123",
+    "reply_author": "1",
+    "posts_id": "1"
+},
+{
+    "reply_body": "This is reply 1234",
+    "reply_author": "1",
+    "posts_id": "1"
+}
+]
